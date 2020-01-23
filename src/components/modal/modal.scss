@@ -1,0 +1,75 @@
+.App-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1300;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.App-modal-container {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  max-width: 960px;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+  0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+  0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #fff;
+
+  .App-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-header {
+      flex: 0 0 auto;
+      padding: 16px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    &-body {
+      flex: 1 1 auto;
+      padding: 16px;
+    }
+
+    &-footer {
+      flex: 0 0 auto;
+      padding: 16px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+.App-button {
+  padding: 6px 16px;
+  color: white;
+  border-radius: 4px;
+  background-color: green;
+  margin: 0 10px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: darken(green, 10%);
+  }
+}
+
+.App-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

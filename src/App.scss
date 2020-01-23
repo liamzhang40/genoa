@@ -1,0 +1,9 @@
+#root {
+  height: 100vh;
+}
+
+.App-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex;
+}

@@ -1,0 +1,43 @@
+.App-list {
+  margin: 32px;
+  width: calc(100% - 64px);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.App-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tbody tr:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+
+  th {
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+  }
+}
+
+.App-relative {
+  position: relative;
+
+  .App-profile-tile {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 100px;
+    }
+  }
+}
